@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>ALP4A LOGIN</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="title">
+            ALP4A LOGIN
+         </div>
+         <form>
+            <div class="field">
+               <input type="password" required id="pswd">
+               <label>Hasło</label>
+            </div>
+            <div class="field">
+               <input type="submit" onclick="checkPswd();" value="Zaloguj się" id="pass1">
+            </div>
+         </form>
+      </div>
+      <script type="text/javascript">
+        function checkPswd() {
+            var confirmPassword = "BLUE001";
+            var password = document.getElementById("pswd").value;
+            if (password == confirmPassword) {
+                alert("Link: bit.ly/alpha032");
+            }
+            else{
+                alert("Hasło nie jest poprawne!");
+            }
+        }
+    </script>
+   </body>
+</html>
