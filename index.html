@@ -14,22 +14,22 @@
          <form>
             <div class="field">
                <input type="password" required id="pswd">
-               <label>Hasło</label>
+               <label>Klucz zabezpieczający</label>
             </div>
             <div class="field">
-               <input type="submit" onclick="checkPswd();" value="Zaloguj się" id="pass1">
+               <input type="submit" onclick="checkPswd();" value="Rozszyfruj" id="pass1">
             </div>
          </form>
       </div>
       <script type="text/javascript">
         function checkPswd() {
-            var confirmPassword = "BLUE001";
+            var confirmPassword = "a00db";
             var password = document.getElementById("pswd").value;
             if (password == confirmPassword) {
-                alert("Link: bit.ly/alpha032");
+                alert("Klucz jest poprawny! Link: bit.ly/alpha032");
             }
             else{
-                alert("Hasło nie jest poprawne!");
+                alert("Klucz jest nie poprawny!");
             }
         }
     </script>
