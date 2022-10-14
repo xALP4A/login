@@ -18,14 +18,13 @@
             </div>
             <div class="field">
                <input type="submit" onclick="checkPswd();" value="Rozszyfruj" id="pass1">
-               <input type="submit" onclick="checkPswd();" value="Rozszyfruj 2" id="pass1">
+               <input type="submit" onclick="checkPswd2();" value="Rozszyfruj 2" id="pswd2">
             </div>
          </form>
       </div>
       <script type="text/javascript">
         function checkPswd() {
             var confirmPassword = "YELLOW";
-            var confirmPassword2 = "RED&BLUE";
             var password = document.getElementById("pswd").value;
             if (password == confirmPassword) {
                 alert("Klucz jest poprawny! Link: bit.ly/yellow002");
@@ -33,7 +32,11 @@
             else{
                 alert("Klucz jest nie poprawny!");
             };
-            if (password == confirmPassword2) {
+        }
+        function checkPswd2() {
+            var confirmPassword2 = "RED&BLUE";
+            var password2 = document.getElementById("pswd2").value;
+            if (password2 == confirmPassword2) {
                 alert("Klucz jest poprawny! Link: bit.ly/redblue01");
             }
             else{
